@@ -655,7 +655,6 @@ main {
 
 .available_section {
   height: 100%;
-  max-height: 1326px;
   width: 80%;
   margin: 0 auto;
   display: grid;
@@ -675,7 +674,7 @@ main {
 .available_section_accent {
   position: absolute;
   z-index: -1;
-  top: 31%;
+  top: 29%;
   left: 0;
 }
 .available_section_desc {
@@ -716,7 +715,6 @@ main {
   display: flex;
   flex-direction: column;
   justify-self: center;
-  max-height: 548px;
 }
 .available_section .available_card_poster {
   width: 100%;
@@ -746,6 +744,7 @@ main {
   background-color: #FF823A;
   border: 1px solid #FF823A;
   border-radius: 40px;
+  cursor: pointer;
 }
 .available_section .available_category_rate {
   display: flex;
@@ -755,6 +754,7 @@ main {
   border: 1px solid white;
   border-radius: 30px;
   padding: 7px 12px;
+  cursor: pointer;
 }
 .available_section .available_category_rate img {
   padding-right: 5px;
@@ -821,6 +821,7 @@ main {
   display: flex;
   align-items: center;
   margin: 16px 0 16px 24px;
+  cursor: pointer;
 }
 .available_section .availbale_card_user_info img {
   margin-right: 8px;
