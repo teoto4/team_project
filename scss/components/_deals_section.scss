@@ -14,6 +14,7 @@
         position: relative;
 
         .first_deal_sec_card {
+
             position: absolute;
             top: 91px;
             right: 159px;
@@ -21,6 +22,7 @@
         }
 
         .second_deal_sec_card {
+
             position: absolute;
             top: 100px;
             right: 100px;
@@ -47,7 +49,9 @@
         .deals_section_desc {
             width: 100%;
             padding: 150px 0 244px 100px;
+            position: absolute;
             z-index: 10;
+
 
             .deals_section_text {
                 font-family: $second-family;
