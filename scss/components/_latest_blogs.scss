@@ -7,12 +7,15 @@
 
 .latest_blog_div1 {
     width: 100vw;
+    height: 241px;
     display: grid;
     justify-items: center;
 
     img {
         padding-top: 120px;
         padding-bottom: 50px;
+        width: 420px;
+        height: 241px;
     }
 }
 
