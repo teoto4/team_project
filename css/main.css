@@ -339,6 +339,7 @@ main {
 .category_section {
   background-color: white;
   height: 100%;
+  width: 100vw;
 }
 
 .category_text {
@@ -549,7 +550,7 @@ main {
   background-color: #EE1C47;
 }
 
-@media (max-width: 1001px) {
+@media (min-width: 720px) and (max-width: 1000px) {
   .category_card {
     display: grid;
     grid-template-areas: "card1 card2" "card3 card4";
