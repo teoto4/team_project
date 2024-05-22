@@ -554,12 +554,34 @@ main {
   background-image: url("../image/main_img/3_deals_section/city_background.png");
   background-size: cover;
   background-repeat: no-repeat;
-  position: relative;
 }
 .deals_section .box_shadow {
   background-color: rgba(0, 0, 0, 0.66);
   height: 100%;
-  z-index: -17;
+  position: relative;
+}
+.deals_section .box_shadow .first_deal_sec_card {
+  position: absolute;
+  top: 91px;
+  right: 159px;
+  z-index: 2;
+}
+.deals_section .box_shadow .second_deal_sec_card {
+  position: absolute;
+  top: 100px;
+  right: 100px;
+  z-index: 1;
+}
+.deals_section .box_shadow .orange_line {
+  position: absolute;
+  top: 502px;
+  right: 537px;
+  z-index: 2;
+}
+.deals_section .box_shadow .white_line {
+  position: absolute;
+  top: 112px;
+  right: 25px;
 }
 .deals_section .box_shadow .deals_section_desc {
   width: 100%;
@@ -573,7 +595,6 @@ main {
   line-height: 60px;
   color: #fff;
   opacity: 1;
-  z-index: 1;
 }
 .deals_section .box_shadow .deals_section_desc .deals_section_text span {
   font-family: "SF-Pro-Display-Semibold", sans-serif;
@@ -628,29 +649,6 @@ main {
   filter: blur(10px);
   opacity: 1;
   animation: animate 5s linear infinite;
-}
-.deals_section .box_shadow .first_deal_sec_card {
-  position: absolute;
-  top: 91px;
-  right: 159px;
-  z-index: 2;
-}
-.deals_section .box_shadow .second_deal_sec_card {
-  position: absolute;
-  top: 100px;
-  right: 100px;
-  z-index: 1;
-}
-.deals_section .box_shadow .orange_line {
-  position: absolute;
-  top: 502px;
-  right: 537px;
-  z-index: 2;
-}
-.deals_section .box_shadow .white_line {
-  position: absolute;
-  top: 112px;
-  right: 25px;
 }
 
 .available_section {
