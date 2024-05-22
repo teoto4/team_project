@@ -1245,6 +1245,7 @@ main {
   padding-top: 24px;
   font-size: 13px;
   color: rgb(90, 88, 88);
+  float: left;
 }
 .latest_blog_grid .latest_blog_block1 .latest_blog_p3 span {
   color: #FF823A;
@@ -1286,8 +1287,8 @@ main {
   border-radius: 16px;
   padding: 20px;
   justify-content: center;
-  margin-left: -270px;
-  margin-top: 100px;
+  margin-left: 150px;
+  margin-top: 609px;
   cursor: pointer;
 }
 .latest_blog_grid button:hover {

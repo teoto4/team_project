@@ -78,6 +78,7 @@
             color: #676c7be1;
             padding-top: 10px;
             padding-right: 20px;
+
         }
 
         .latest_blog_p3 {
@@ -85,6 +86,7 @@
             padding-top: 24px;
             font-size: 13px;
             color: rgb(90, 88, 88);
+            float: left;
 
             span {
                 color: $orange-accent-color;
@@ -133,9 +135,8 @@
         border-radius: 16px;
         padding: 20px;
         justify-content: center;
-        margin-left: -270px;
-        margin-top: 100px;
-
+        margin-left: 150px;
+        margin-top: 609px;
         cursor: pointer;
 
         &:hover {
