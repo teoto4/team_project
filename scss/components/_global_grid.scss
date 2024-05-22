@@ -1,6 +1,7 @@
 body {
     display: grid;
     grid-template-rows: minmax(90px, 100vw) minmax(6874px, 100vw) minmax(max-width 512px, 100vw);
+    overflow-x: hidden;
 }
 
 

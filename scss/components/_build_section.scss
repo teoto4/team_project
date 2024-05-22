@@ -47,6 +47,7 @@
 
 .rating_img {
     padding-top: 25px;
+    cursor: pointer;
 }
 
 .phone_number {
@@ -54,6 +55,7 @@
     font-weight: 700;
     color: #ee1c47;
     padding-top: 70px;
+    text-decoration: underline;
 }
 
 .phone_comment {
@@ -67,7 +69,7 @@
     position: absolute;
     z-index: 2;
     top: 160px;
-    left: 38%;
+    left: 40%;
 }
 
 .build_section_number {
@@ -118,7 +120,7 @@
     border-radius: 20px;
     position: absolute;
     z-index: 5;
-    top: 860px;
+    top: 890px;
     left: 50%;
     transform: translateX(-50%);
     display: flex;
@@ -191,35 +193,35 @@
     box-shadow: 13px 13px 50px #c1c1c1, -13px -13px 50px #ffffff;
     position: absolute;
     z-index: 4;
-    top: 830px;
+    top: 860px;
     left: 50%;
     transform: translateX(-50%);
 }
 
-@media (max-width: 1350px) {
+@media (max-width: 1001px) {
     .main_img {
-        width: 500px;
+        display: none;
     }
-}
 
-@media (max-width: 1250px) {
-    .main_img {
-        width: 400px;
-        position: absolute;
-        z-index: 2;
-        top: 160px;
-        left: 55%;
+    .explore {
+
+        display: none;
+    }
+
+    .test {
+
+        display: none;
     }
 
     .build_section_listings {
         display: none;
     }
 
-    .build_section_people {
+    .build_section_places {
         display: none;
     }
 
-    .build_section_places {
+    .build_section_people {
         display: none;
     }
 }
