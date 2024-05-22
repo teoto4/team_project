@@ -847,6 +847,60 @@ main {
   cursor: pointer;
   fill: #EE1C47;
 }
+@media (min-width: 720px) and (max-width: 1000px) {
+  .available_section .available_section {
+    width: 80%;
+  }
+  .available_section .available_section_title {
+    font-size: 50px;
+  }
+  .available_section .available_section_accent {
+    top: 19%;
+  }
+  .available_section .available_section_text {
+    font-size: 22px;
+  }
+  .available_section .available_section_btn {
+    padding: 30px 35px;
+    font-size: 20px;
+  }
+  .available_section .available_section_card_box {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    margin-bottom: 150px;
+  }
+  .available_section .available_category_name {
+    font-size: 20px;
+  }
+  .available_section .available_category_rate p {
+    font-size: 20px;
+  }
+  .available_section .available_card_name,
+  .available_section .available_card_price {
+    font-size: 25px;
+  }
+  .available_section .available_card_contact p {
+    font-size: 20px;
+  }
+  .available_section .availbale_card_user_info img {
+    width: 70px;
+    height: 70px;
+  }
+  .available_section .available_card_user_name {
+    font-size: 20px;
+  }
+  .available_section .available_card_user_date {
+    font-size: 18px;
+  }
+  .available_section .available_card_arrow {
+    width: 34px;
+    height: 30px;
+  }
+  .available_section .available_card_arrow {
+    width: 50px;
+    height: 40px;
+  }
+}
 
 .get_our_monthly_section {
   margin-top: 120px;

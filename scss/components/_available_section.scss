@@ -64,6 +64,13 @@
         margin-top: 50px;
     }
 
+    // @media (min-width: 720px) and (max-width: 1000px) {
+    //     .available_section_card_box {
+    //         grid-template-columns: 1fr 1fr;
+    //         grid-template-rows: 1fr 1fr 1fr;
+    //     }
+    // }
+
     .available_section_card {
         width: 100%;
         display: flex;
@@ -224,4 +231,75 @@
         cursor: pointer;
         fill: $red-accent-color;
     }
+
+    @media (min-width: 720px) and (max-width: 1000px) {
+        .available_section {
+            width: 80%;
+
+            &_title {
+                font-size: 50px;
+            }
+
+            &_accent {
+                top: 19%;
+            }
+
+            &_text {
+                font-size: 22px;
+            }
+
+            &_btn {
+                padding: 30px 35px;
+                font-size: 20px;
+            }
+        }
+
+        .available_section_card_box {
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+            margin-bottom: 150px;
+        }
+
+        .available_category_name {
+            font-size: 20px;
+        }
+
+        .available_category_rate p {
+            font-size: 20px;
+        }
+
+        .available_card_name,
+        .available_card_price {
+            font-size: 25px;
+        }
+
+        .available_card_contact p {
+            font-size: 20px;
+        }
+
+        .availbale_card_user_info img {
+            width: 70px;
+            height: 70px;
+        }
+
+        .available_card_user_name {
+            font-size: 20px;
+        }
+
+        .available_card_user_date {
+            font-size: 18px;
+        }
+
+        .available_card_arrow {
+            width: 34px;
+            height: 30px;
+        }
+
+        .available_card_arrow {
+            width: 50px;
+            height: 40px;
+        }
+
+    }
+
 }
