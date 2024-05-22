@@ -25,10 +25,10 @@
     color: #09153D;
     font-size: 48px;
     text-align: center;
-
+    gap: 20px;
     font-family: $font-family;
     padding-bottom: 51px;
-    gap: 15px;
+
 
 }
 
@@ -40,14 +40,14 @@
     padding-top: 30px;
     grid-template-columns: 410px 410px 410px;
     grid-template-rows: 1fr;
-    gap: 0px 30px;
+
     grid-template-areas: ". . .";
     justify-content: center;
 
 
     .latest_blog_block1 {
         width: 410px;
-        height: 587px;
+        height: 555px;
         box-shadow:
             0.5px 3.1px 5.3px rgba(0, 0, 0, 0.008),
             1.6px 10.3px 17.9px rgba(0, 0, 0, 0.012),
@@ -68,7 +68,7 @@
             font-family: $font-family;
             color: #09153D;
             padding-top: 24px;
-            padding-left: 30px;
+
             padding-bottom: 8px;
         }
 
@@ -83,7 +83,7 @@
 
         .latest_blog_p3 {
             padding-left: 30px;
-            padding-top: 24px;
+            padding-top: 40px;
             font-size: 13px;
             color: rgb(90, 88, 88);
             float: left;
@@ -119,7 +119,7 @@
             font-size: 20px;
             color: #09153D;
             margin-top: -28px;
-            padding-left: 30px;
+
             padding-bottom: 8px;
         }
     }
