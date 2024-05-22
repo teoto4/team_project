@@ -1,6 +1,7 @@
 .category_section {
     background-color: white;
     height: 100%;
+    width: 100vw;
 }
 
 .category_text {
@@ -212,7 +213,7 @@
     background-color: $red-accent-color;
 }
 
-@media (max-width: 1001px) {
+@media (min-width: 720px) and (max-width: 1000px) {
 
     .category_card {
         display: grid;
