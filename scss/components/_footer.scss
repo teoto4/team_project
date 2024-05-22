@@ -55,3 +55,9 @@
 .footer_logo_icon :not(:last-child) {
     padding-right: 20px;
 }
+
+@media (max-width: 1001px) {
+    .footer_last_text {
+        width: 52%;
+    }
+}
