@@ -1125,6 +1125,10 @@ main {
   display: grid;
   justify-items: center;
 }
+.latest_blog_div1 img {
+  padding-top: 120px;
+  padding-bottom: 50px;
+}
 
 .Latest_blogs {
   display: grid;
