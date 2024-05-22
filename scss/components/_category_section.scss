@@ -215,6 +215,10 @@ a:hover {
 }
 
 @media (min-width: 720px) and (max-width: 1000px) {
+    .category_text {
+        padding-top: 50px;
+    }
+
     .category_text_main p {
         font-size: 40px;
     }
@@ -258,9 +262,9 @@ a:hover {
 
     .card1 a {
         width: 130px;
-        height: 22px;
+        height: 25px;
         font-size: 14px;
-        padding: 2px 22px;
+        padding: 3px 22px;
     }
 
     .card2 {
@@ -274,9 +278,9 @@ a:hover {
 
     .card2 a {
         width: 130px;
-        height: 22px;
+        height: 25px;
         font-size: 14px;
-        padding: 2px 22px;
+        padding: 3px 22px;
     }
 
     .card3 {
@@ -290,9 +294,9 @@ a:hover {
 
     .card3 a {
         width: 130px;
-        height: 22px;
+        height: 25px;
         font-size: 14px;
-        padding: 2px 22px;
+        padding: 3px 22px;
     }
 
     .card4 {
@@ -306,9 +310,9 @@ a:hover {
 
     .card4 a {
         width: 130px;
-        height: 22px;
+        height: 25px;
         font-size: 14px;
-        padding: 2px 22px;
+        padding: 3px 22px;
     }
 
     .nav_bar {
