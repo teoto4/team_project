@@ -596,6 +596,7 @@ main {
 .deals_section .box_shadow .deals_section_desc {
   width: 100%;
   padding: 150px 0 244px 100px;
+  position: absolute;
   z-index: 10;
 }
 .deals_section .box_shadow .deals_section_desc .deals_section_text {
