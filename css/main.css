@@ -562,6 +562,8 @@ main {
   background-image: url("../image/main_img/3_deals_section/city_background.png");
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
+  width: 100vw;
 }
 .deals_section .box_shadow {
   background-color: rgba(0, 0, 0, 0.66);
