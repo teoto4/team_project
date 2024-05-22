@@ -2,14 +2,47 @@
     background-image: url("../image/main_img/3_deals_section/city_background.png");
     background-size: cover;
     background-repeat: no-repeat;
-    position: relative;
+    background-position: center;
+    width: 100vw;
+
 
 
 
     .box_shadow {
         background-color: rgba(0, 0, 0, 0.66);
         height: 100%;
-        z-index: -17;
+        position: relative;
+
+        .first_deal_sec_card {
+            position: absolute;
+            top: 91px;
+            right: 159px;
+            z-index: 2;
+        }
+
+        .second_deal_sec_card {
+            position: absolute;
+            top: 100px;
+            right: 100px;
+            z-index: 1;
+        }
+
+        .orange_line {
+            position: absolute;
+            top: 502px;
+            right: 537px;
+            z-index: 2;
+        }
+
+
+        .white_line {
+            position: absolute;
+            top: 112px;
+            right: 25px;
+
+        }
+
+
 
         .deals_section_desc {
             width: 100%;
@@ -23,7 +56,7 @@
                 line-height: 60px;
                 color: #fff;
                 opacity: 1;
-                z-index: 1;
+                // z-index: 1;
 
                 span {
                     font-family: $second-family;
@@ -91,34 +124,7 @@
         }
 
 
-        .first_deal_sec_card {
-            position: absolute;
-            top: 91px;
-            right: 159px;
-            z-index: 2;
-        }
 
-        .second_deal_sec_card {
-            position: absolute;
-            top: 100px;
-            right: 100px;
-            z-index: 1;
-        }
-
-        .orange_line {
-            position: absolute;
-            top: 502px;
-            right: 537px;
-            z-index: 2;
-        }
-
-
-        .white_line {
-            position: absolute;
-            top: 112px;
-            right: 25px;
-
-        }
 
     }
 }

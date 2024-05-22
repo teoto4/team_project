@@ -434,7 +434,7 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  background-image: url(../image/main_img/2_category_section/card_eat_and_foods.png);
+  background-image: url(../image/main_img/2_category_section/card_education.png);
   padding-left: 24px;
   padding-bottom: 24px;
   transition: color 0.2s, background-color 0.2s;
@@ -467,7 +467,7 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  background-image: url(../image/main_img/2_category_section/card_education.png);
+  background-image: url(../image/main_img/2_category_section/card_eat_and_foods.png);
   padding-left: 24px;
   padding-bottom: 24px;
   transition: color 0.2s, background-color 0.2s;
@@ -518,7 +518,7 @@ main {
   color: white;
   font-size: 16px;
   font-weight: 500;
-  padding: 10px 33px;
+  padding: 10px 32px;
   background-color: rgba(154, 154, 154, 0.589);
   border-radius: 40px;
 }
@@ -550,16 +550,48 @@ main {
   background-color: #EE1C47;
 }
 
+@media (max-width: 1001px) {
+  .category_card {
+    display: grid;
+    grid-template-areas: "card1 card2" "card3 card4";
+    justify-items: center;
+    justify-content: center;
+  }
+}
 .deals_section {
   background-image: url("../image/main_img/3_deals_section/city_background.png");
   background-size: cover;
   background-repeat: no-repeat;
-  position: relative;
+  background-position: center;
+  width: 100vw;
 }
 .deals_section .box_shadow {
   background-color: rgba(0, 0, 0, 0.66);
   height: 100%;
-  z-index: -17;
+  position: relative;
+}
+.deals_section .box_shadow .first_deal_sec_card {
+  position: absolute;
+  top: 91px;
+  right: 159px;
+  z-index: 2;
+}
+.deals_section .box_shadow .second_deal_sec_card {
+  position: absolute;
+  top: 100px;
+  right: 100px;
+  z-index: 1;
+}
+.deals_section .box_shadow .orange_line {
+  position: absolute;
+  top: 502px;
+  right: 537px;
+  z-index: 2;
+}
+.deals_section .box_shadow .white_line {
+  position: absolute;
+  top: 112px;
+  right: 25px;
 }
 .deals_section .box_shadow .deals_section_desc {
   width: 100%;
@@ -573,7 +605,6 @@ main {
   line-height: 60px;
   color: #fff;
   opacity: 1;
-  z-index: 1;
 }
 .deals_section .box_shadow .deals_section_desc .deals_section_text span {
   font-family: "SF-Pro-Display-Semibold", sans-serif;
@@ -628,29 +659,6 @@ main {
   filter: blur(10px);
   opacity: 1;
   animation: animate 5s linear infinite;
-}
-.deals_section .box_shadow .first_deal_sec_card {
-  position: absolute;
-  top: 91px;
-  right: 159px;
-  z-index: 2;
-}
-.deals_section .box_shadow .second_deal_sec_card {
-  position: absolute;
-  top: 100px;
-  right: 100px;
-  z-index: 1;
-}
-.deals_section .box_shadow .orange_line {
-  position: absolute;
-  top: 502px;
-  right: 537px;
-  z-index: 2;
-}
-.deals_section .box_shadow .white_line {
-  position: absolute;
-  top: 112px;
-  right: 25px;
 }
 
 .available_section {
@@ -1173,6 +1181,10 @@ main {
   display: grid;
   justify-items: center;
 }
+.latest_blog_div1 img {
+  padding-top: 120px;
+  padding-bottom: 50px;
+}
 
 .Latest_blogs {
   display: grid;
@@ -1334,4 +1346,10 @@ main {
 
 .footer_logo_icon :not(:last-child) {
   padding-right: 20px;
+}
+
+@media (max-width: 1001px) {
+  .footer_last_text {
+    width: 52%;
+  }
 }/*# sourceMappingURL=main.css.map */
