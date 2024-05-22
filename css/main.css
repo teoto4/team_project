@@ -917,6 +917,7 @@ main {
   display: flex;
   justify-content: center;
   background-color: #09153D;
+  width: 100vw;
 }
 .get_our_monthly_section .get_our_monthly_conteiner {
   display: grid;
