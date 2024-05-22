@@ -1214,7 +1214,7 @@ main {
 }
 .latest_blog_grid .latest_blog_block1 {
   width: 410px;
-  height: 540px;
+  height: 587px;
   box-shadow: 0.5px 3.1px 5.3px rgba(0, 0, 0, 0.008), 1.6px 10.3px 17.9px rgba(0, 0, 0, 0.012), 7px 46px 80px rgba(0, 0, 0, 0.02);
   border-radius: 24px;
   cursor: pointer;
@@ -1288,7 +1288,7 @@ main {
   padding: 20px;
   justify-content: center;
   margin-left: 150px;
-  margin-top: 609px;
+  margin-top: 632px;
   cursor: pointer;
 }
 .latest_blog_grid button:hover {
