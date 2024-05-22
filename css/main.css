@@ -404,6 +404,7 @@ main {
   background-image: url(../image/main_img/2_category_section/card_business.png);
   padding-left: 24px;
   padding-bottom: 24px;
+  transition: color 0.2s, background-color 0.2s;
 }
 
 .card1 p {
@@ -421,10 +422,9 @@ main {
   padding: 10px 33px;
   background-color: rgba(154, 154, 154, 0.589);
   border-radius: 40px;
-  transition: color 0.2s, background-color 0.2s;
 }
 
-.card1 a:hover {
+.card1 .card2 .card3 .card4 a:hover {
   color: #09153D;
   background-color: rgba(255, 255, 255, 0.59);
 }
@@ -457,7 +457,7 @@ main {
   border-radius: 40px;
 }
 
-.card2 a:hover {
+a:hover {
   color: #09153D;
   background-color: rgba(255, 255, 255, 0.59);
 }
@@ -551,11 +551,90 @@ main {
 }
 
 @media (min-width: 720px) and (max-width: 1000px) {
+  .category_text_main p {
+    font-size: 40px;
+  }
+  .category_text_main img {
+    left: 25%;
+    width: 363px;
+  }
+  .category_text_second {
+    font-size: 14px;
+  }
+  .card {
+    width: 206px;
+    height: 220px;
+  }
   .category_card {
     display: grid;
     grid-template-areas: "card1 card2" "card3 card4";
+    gap: 20px;
+    padding: 35px 0;
     justify-items: center;
     justify-content: center;
+  }
+  .category_card :first-child {
+    padding-left: 5px;
+  }
+  .card1 {
+    padding-bottom: 10px;
+  }
+  .card1 p {
+    font-size: 15px;
+  }
+  .card1 a {
+    width: 130px;
+    height: 22px;
+    font-size: 14px;
+    padding: 2px 22px;
+  }
+  .card2 {
+    padding-left: 5px;
+    padding-bottom: 10px;
+  }
+  .card2 p {
+    font-size: 15px;
+  }
+  .card2 a {
+    width: 130px;
+    height: 22px;
+    font-size: 14px;
+    padding: 2px 22px;
+  }
+  .card3 {
+    padding-left: 5px;
+    padding-bottom: 10px;
+  }
+  .card3 p {
+    font-size: 15px;
+  }
+  .card3 a {
+    width: 130px;
+    height: 22px;
+    font-size: 14px;
+    padding: 2px 22px;
+  }
+  .card4 {
+    padding-left: 5px;
+    padding-bottom: 10px;
+  }
+  .card4 p {
+    font-size: 15px;
+  }
+  .card4 a {
+    width: 130px;
+    height: 22px;
+    font-size: 14px;
+    padding: 2px 22px;
+  }
+  .nav_bar {
+    padding-bottom: 60px;
+  }
+  .nav_bar a {
+    padding: 6px 6px;
+  }
+  .nav_bar a:hover {
+    padding: 6px 10px;
   }
 }
 .deals_section {
@@ -1299,6 +1378,7 @@ main {
 .footer {
   background-color: #000924;
   color: white;
+  width: 100vw;
 }
 
 .footer_main_text {
@@ -1307,7 +1387,7 @@ main {
   padding: 0 300px;
   padding-top: 130px;
   padding-bottom: 70px;
-  justify-content: space-between;
+  gap: 70px;
 }
 
 .footer_main_list span {
@@ -1354,8 +1434,29 @@ main {
   padding-right: 20px;
 }
 
-@media (max-width: 1001px) {
+@media (min-width: 720px) and (max-width: 1000px) {
+  .footer_main_text {
+    padding: 0 50px;
+    padding-top: 115px;
+    padding-bottom: 35px;
+    gap: 0;
+  }
+  .footer_main_list :first-child {
+    padding-bottom: 5px;
+    width: 140px;
+  }
+  .footer_main_list li {
+    font-size: 14px;
+  }
+  .footer_second_list :first-child {
+    font-size: 15px;
+  }
+  .footer_second_list li {
+    font-size: 14px;
+  }
   .footer_last_text {
-    width: 52%;
+    margin-left: 50px;
+    width: 90%;
+    font-size: 14px;
   }
 }/*# sourceMappingURL=main.css.map */
