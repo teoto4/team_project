@@ -1217,6 +1217,10 @@ a:hover {
     grid-template-rows: 1fr 1fr;
   }
 }
+.how_it_works_section {
+  width: 100vw;
+}
+
 .how_it_works_article {
   width: 90%;
   margin: 0 auto;
