@@ -296,8 +296,9 @@ main {
   font-size: 16px;
   font-weight: 700;
   color: #ee1c47;
-  padding-top: 70px;
+  margin-top: 70px;
   text-decoration: underline;
+  max-width: 200px;
 }
 
 .phone_comment {
