@@ -440,7 +440,7 @@ main {
   transform: translateX(-50%);
 }
 
-@media (max-width: 1001px) {
+@media (max-width: 1002px) {
   .main_img {
     display: none;
   }
