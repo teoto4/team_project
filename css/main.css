@@ -1288,6 +1288,37 @@ a:hover {
   margin-top: 8px;
 }
 
+@media (min-width: 720px) and (max-width: 1000px) {
+  .how_it_works_section_card {
+    width: 287px;
+    height: 220px;
+  }
+  .how_it_works_section_card .card_title {
+    font-size: 14px;
+    line-height: 21px;
+  }
+  .how_it_works_section_card .card_desc {
+    font-size: 11px;
+    line-height: 19px;
+  }
+  .how_it_works_section_card .card_img {
+    margin: 42px 0 21px 0;
+  }
+  .how_it_works_section_card .card_img .category_img {
+    width: 49px;
+    height: 49px;
+  }
+  .how_it_works_section_title {
+    font-size: 40px;
+  }
+  .how_it_works_section_desc {
+    font-size: 14px;
+    padding: 0 10px;
+  }
+  .how_it_works_section_box {
+    padding: 0 40px;
+  }
+}
 .users_feedbacks_section {
   display: flex;
   justify-content: center;
