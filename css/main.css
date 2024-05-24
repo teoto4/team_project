@@ -1183,10 +1183,10 @@ a:hover {
   cursor: pointer;
   fill: #EE1C47;
 }
-.available_section .available_section_slider {
+.available_section .as_slider_container {
   display: none;
 }
-@media (min-width: 720px) and (max-width: 1000px) {
+@media (min-width: 930px) and (max-width: 1300px) {
   .available_section .available_section {
     width: 80%;
   }
@@ -1254,43 +1254,46 @@ a:hover {
     width: 50px;
     height: 40px;
   }
-  .available_section .available_section_slider {
+  .available_section .as_slider_container {
     display: none;
   }
 }
-@media (max-width: 719px) {
+@media (max-width: 929px) {
   .available_section .available_section {
     width: 100%;
     grid-auto-flow: row;
   }
   .available_section_title {
-    font-size: 34px;
+    font-size: 40px;
+    text-align: center;
   }
   .available_section_accent {
-    top: 35px;
+    top: 40px;
     left: 0;
-    width: 320px;
+    width: 90%;
     height: 26px;
   }
   .available_section_desc {
     display: flex;
     flex-direction: column;
     gap: 0;
+    margin-top: 30px;
   }
   .available_section_text {
-    font-size: 12px;
+    font-size: 14px;
   }
   .available_section_btn {
-    padding: 10px 15px;
-    font-size: 10px;
+    padding: 15px 15px;
+    font-size: 15px;
     margin-top: 15px;
   }
   .available_section .available_section_card_box {
     display: none;
   }
   .available_section .as_slider_container {
-    width: 80%;
+    width: 70%;
     height: 100%;
+    display: inline-block;
     overflow: hidden;
     position: relative;
     margin: 0 auto;
@@ -1298,8 +1301,7 @@ a:hover {
   }
   .available_section .as_slider_navigation {
     position: absolute;
-    bottom: 16px;
-    top: 60%;
+    bottom: 20%;
     left: 50%;
     transform: translateX(-50%);
     display: flex;
@@ -1352,7 +1354,7 @@ a:hover {
     transform: translate(-200%);
   }
   .available_section .available_card_sticker {
-    top: 75%;
+    top: 80%;
   }
   .available_section .available_card_info {
     flex-direction: column;

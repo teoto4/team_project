@@ -67,13 +67,6 @@
         justify-self: center;
     }
 
-    // @media (min-width: 720px) and (max-width: 1000px) {
-    //     .available_section_card_box {
-    //         grid-template-columns: 1fr 1fr;
-    //         grid-template-rows: 1fr 1fr 1fr;
-    //     }
-    // }
-
     .available_section_card {
         width: 100%;
         display: flex;
@@ -235,11 +228,11 @@
         fill: $red-accent-color;
     }
 
-    .available_section_slider {
+    .as_slider_container {
         display: none;
     }
 
-    @media (min-width: 720px) and (max-width: 1000px) {
+    @media (min-width: 930px) and (max-width: 1300px) {
         .available_section {
             width: 80%;
 
@@ -327,13 +320,13 @@
             height: 40px;
         }
 
-        .available_section_slider {
+        .as_slider_container {
             display: none;
         }
 
     }
 
-    @media (max-width: 719px) {
+    @media (max-width: 929px) {
         .available_section {
             width: 100%;
             grid-auto-flow: row;
@@ -341,13 +334,14 @@
 
 
         &_title {
-            font-size: 34px;
+            font-size: 40px;
+            text-align: center;
         }
 
         &_accent {
-            top: 35px;
+            top: 40px;
             left: 0;
-            width: 320px;
+            width: 90%;
             height: 26px;
         }
 
@@ -355,15 +349,16 @@
             display: flex;
             flex-direction: column;
             gap: 0;
+            margin-top: 30px;
         }
 
         &_text {
-            font-size: 12px;
+            font-size: 14px;
         }
 
         &_btn {
-            padding: 10px 15px;
-            font-size: 10px;
+            padding: 15px 15px;
+            font-size: 15px;
             margin-top: 15px;
         }
 
@@ -372,8 +367,9 @@
         }
 
         .as_slider_container {
-            width: 80%;
+            width: 70%;
             height: 100%;
+            display: inline-block;
             overflow: hidden;
             position: relative;
             margin: 0 auto;
@@ -382,8 +378,7 @@
 
         .as_slider_navigation {
             position: absolute;
-            bottom: 16px;
-            top: 60%;
+            bottom: 20%;
             left: 50%;
             transform: translateX(-50%);
             display: flex;
@@ -448,7 +443,7 @@
         }
 
         .available_card_sticker {
-            top: 75%;
+            top: 80%;
         }
 
         .available_card_info {
@@ -458,7 +453,6 @@
             width: 95%;
 
         }
-
 
         .available_card_name {
             font-size: 20px;
