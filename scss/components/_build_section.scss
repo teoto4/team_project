@@ -153,6 +153,8 @@
     font-size: 14px;
     font-weight: 400;
     color: $descriptions-font-color;
+    display: flex;
+    align-items: center;
 }
 
 .explore_card_words_info {
@@ -194,7 +196,15 @@
     transform: translateX(-50%);
 }
 
+.explore_phone {
+    display: none;
+}
+
 @media (max-width: 1300px) {
+    .explore_phone {
+        display: none;
+    }
+
     .main_img {
         position: absolute;
         z-index: 60;
@@ -224,6 +234,10 @@
 }
 
 @media (max-width: 1210px) {
+    .explore_phone {
+        display: none;
+    }
+
     .main_img {
         position: absolute;
         z-index: 60;
@@ -253,6 +267,23 @@
         display: none;
     }
 
+    .explore {
+        width: 85%;
+        height: 150px;
+        background-color: white;
+        border-radius: 20px;
+        position: absolute;
+        z-index: 5;
+        top: 830px;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        box-shadow: 13px 13px 50px #e8c7d6, -13px -13px 50px #ffefff;
+
+    }
+
     .explore_card_words_title {
         font-size: 12px;
         font-weight: 400;
@@ -265,8 +296,12 @@
         color: $main-font-color;
     }
 
+    .explore_card_words {
+        gap: 1px;
+    }
+
     .explore_button {
-        padding: 20px 25px;
+        padding: 10px 15px;
         background-color: #ee1c47;
         border-radius: 20px;
         color: white;
@@ -275,7 +310,17 @@
         align-items: center;
         justify-content: center;
         font-weight: 700;
+        font-size: 14px;
     }
+
+    .explore_button img {
+        width: 30px;
+    }
+
+    .explore_card_img {
+        width: 30px;
+    }
+
 
 
 
@@ -297,6 +342,53 @@
     .build_section_people {
         display: none;
     }
+
+    .explore {
+        display: none;
+
+    }
+
+    .explore_phone {
+        display: block;
+        padding-top: 40px;
+    }
+
+    .explore_cards_phone {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 15px;
+
+    }
+
+    .explore_card_phone {
+        display: grid;
+        grid-template-columns: 0.3fr 1fr;
+    }
+
+    .explore_button {
+        margin-top: 20px;
+    }
+
+    .explore_card_words_phone {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    .explore_card_words_title_phone {
+        font-size: 8px;
+        font-weight: 400;
+        color: $descriptions-font-color;
+        display: flex;
+        align-items: center;
+    }
+
+    .explore_card_words_info_phone {
+        font-size: 10px;
+        font-weight: 600;
+        color: $main-font-color;
+    }
+
 
 
 }
@@ -393,5 +485,37 @@
         margin-top: 40px;
         text-decoration: underline;
         max-width: 200px;
+    }
+
+    .explore_phone {
+        padding-top: 40px;
+    }
+
+    .explore_cards_phone {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        gap: 15px;
+    }
+
+    .explore_card_phone {
+        display: grid;
+        grid-template-columns: 0.3fr 1fr;
+        align-content: center;
+        justify-self: center;
+        cursor: pointer;
+
+    }
+
+    .explore_card_words_title_phone {
+        font-size: 12;
+    }
+
+    .explore_card_words_info_phone {
+        font-size: 14px;
+    }
+
+    .explore_card_img {
+        width: 40px;
     }
 }
