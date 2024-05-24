@@ -101,15 +101,21 @@ main {
 
 .nav_button {
   padding: 20px 25px;
-  background-color: #EE1C47;
   color: white;
   border-radius: 16px;
   cursor: pointer;
+  animation: color-change-2x 2s linear infinite alternate both;
 }
 
+@keyframes color-change-2x {
+  0% {
+    background: #FF823A;
+  }
+  100% {
+    background: #EE1C47;
+  }
+}
 .nav_button:hover {
-  background-color: white;
-  color: #EE1C47;
   cursor: pointer;
   transform: scale(1.2);
 }
@@ -288,8 +294,19 @@ main {
   color: #09153d;
   font-size: 60px;
   font-weight: 800;
+  animation: scale-in-ver-center 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
+@keyframes scale-in-ver-center {
+  0% {
+    transform: scaleY(0);
+    opacity: 1;
+  }
+  100% {
+    transform: scaleY(1);
+    opacity: 1;
+  }
+}
 .build_section_secondary_text {
   color: #676c7b;
   font-size: 16px;
@@ -343,8 +360,19 @@ main {
   z-index: 2;
   top: 160px;
   left: 40%;
+  animation: kenburns-top 5s ease-out both;
 }
 
+@keyframes kenburns-top {
+  0% {
+    transform: scale(1) translateY(0);
+    transform-origin: 50% 16%;
+  }
+  100% {
+    transform: scale(1.25) translateY(-15px);
+    transform-origin: top;
+  }
+}
 .build_section_number {
   font-size: 48px;
   font-weight: 700;
@@ -435,7 +463,6 @@ main {
 
 .explore_button {
   padding: 20px 25px;
-  background-color: #ee1c47;
   border-radius: 20px;
   color: white;
   display: flex;
@@ -443,12 +470,20 @@ main {
   align-items: center;
   justify-content: center;
   font-weight: 700;
+  animation: color-change-2x 2s linear infinite alternate both;
 }
 
+@keyframes color-change-2x {
+  0% {
+    background: #FF823A;
+  }
+  100% {
+    background: #EE1C47;
+  }
+}
 .explore_button:hover {
   cursor: pointer;
   transform: scale(1.3);
-  color: #ee1c47;
   background-color: #FFE1E8;
 }
 

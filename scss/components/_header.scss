@@ -65,15 +65,23 @@
 
 .nav_button {
     padding: 20px 25px;
-    background-color: $red-accent-color;
     color: white;
     border-radius: 16px;
     cursor: pointer;
+    animation: color-change-2x 2s linear infinite alternate both;
+}
+
+@keyframes color-change-2x {
+    0% {
+        background: $orange-accent-color;
+    }
+
+    100% {
+        background: $red-accent-color;
+    }
 }
 
 .nav_button:hover {
-    background-color: white;
-    color: $red-accent-color;
     cursor: pointer;
     transform: scale(1.2);
 
