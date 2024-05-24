@@ -465,6 +465,7 @@ main {
   background-color: white;
   height: 100%;
   width: 100vw;
+  cursor: default;
 }
 
 .category_text {
@@ -552,6 +553,7 @@ main {
 .card1 .card2 .card3 .card4 a:hover {
   color: #09153D;
   background-color: rgba(255, 255, 255, 0.59);
+  cursor: pointer;
 }
 
 .card2 {
@@ -754,6 +756,61 @@ a:hover {
     height: 25px;
     font-size: 14px;
     padding: 3px 22px;
+  }
+  .nav_bar {
+    padding-bottom: 60px;
+  }
+  .nav_bar a {
+    padding: 6px 6px;
+  }
+  .nav_bar a:hover {
+    padding: 6px 10px;
+  }
+}
+@media (max-width: 719px) {
+  .category_text {
+    padding-top: 25px;
+  }
+  .category_text_main p {
+    font-size: 35px;
+  }
+  .category_text_main img {
+    left: 17%;
+    width: 295px;
+  }
+  .category_text_second {
+    font-size: 9px;
+  }
+  .category_card {
+    padding-bottom: 20px;
+  }
+  .category_card :first-child {
+    padding-left: 5px;
+  }
+  .card {
+    width: 206px;
+    height: 220px;
+  }
+  .card1 {
+    padding-bottom: 10px;
+  }
+  .card1 p {
+    font-size: 15px;
+  }
+  .card1 a {
+    width: 130px;
+    height: 25px;
+    font-size: 14px;
+    padding: 3px 22px;
+  }
+  .card2 {
+    display: none;
+  }
+  .card3 {
+    display: none;
+  }
+  .card4 {
+    display: none;
   }
   .nav_bar {
     padding-bottom: 60px;
@@ -1552,6 +1609,7 @@ a:hover {
   background-color: #000924;
   color: white;
   width: 100vw;
+  cursor: default;
 }
 
 .footer_main_text {
@@ -1590,6 +1648,10 @@ a:hover {
   line-height: 30px;
 }
 
+.footer_second_list li:not(:first-child:hover) {
+  cursor: pointer;
+}
+
 .footer_last_text {
   width: 63%;
   display: flex;
@@ -1601,6 +1663,10 @@ a:hover {
   font-size: 16px;
   color: rgba(255, 255, 255, 0.7);
   line-height: 30px;
+}
+
+.footer_logo_icon :hover {
+  cursor: pointer;
 }
 
 .footer_logo_icon :not(:last-child) {
@@ -1631,5 +1697,57 @@ a:hover {
     margin-left: 50px;
     width: 90%;
     font-size: 14px;
+  }
+}
+@media (max-width: 719px) {
+  .footer_main_text {
+    padding: 0 50px;
+    padding-top: 60px;
+    padding-bottom: 25px;
+    gap: 5px;
+    display: grid;
+    grid-template-areas: "l1 l2" "l3 l4";
+  }
+  .footer_main_list :first-child {
+    padding-bottom: 5px;
+    width: 140px;
+  }
+  .l1 {
+    grid-area: l1;
+  }
+  .l2 {
+    grid-area: l2;
+  }
+  .l3 {
+    grid-area: l3;
+  }
+  .l4 {
+    grid-area: l4;
+  }
+  .footer_main_list li {
+    font-size: 11px;
+    line-height: 20px;
+  }
+  .footer_second_list :first-child {
+    font-size: 12px;
+    padding-bottom: 5px;
+  }
+  .footer_second_list li {
+    font-size: 10px;
+    line-height: 20px;
+  }
+  .footer_last_text {
+    margin-left: 50px;
+    width: 80%;
+    font-size: 12px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+  }
+  .footer_logo_icon :not(:last-child) {
+    padding-right: 0px;
+  }
+  .footer_logo_icon img {
+    width: 22px;
+    height: 22px;
   }
 }/*# sourceMappingURL=main.css.map */
