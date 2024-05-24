@@ -872,7 +872,6 @@ a:hover {
 .available_section {
   height: 100%;
   width: 100vw;
-  margin: 0 auto;
   display: grid;
   grid-template-rows: 0.2fr 1.8fr;
   margin-top: 120px;
@@ -880,7 +879,7 @@ a:hover {
 .available_section_info {
   width: 80%;
   position: relative;
-  margin: 0 auto;
+  justify-self: center;
 }
 .available_section_title {
   font-family: "Inter", sans-serif;
@@ -1066,6 +1065,9 @@ a:hover {
   cursor: pointer;
   fill: #EE1C47;
 }
+.available_section .available_section_slider {
+  display: none;
+}
 @media (min-width: 720px) and (max-width: 1000px) {
   .available_section .available_section {
     width: 80%;
@@ -1133,6 +1135,118 @@ a:hover {
   .available_section .available_card_arrow {
     width: 50px;
     height: 40px;
+  }
+  .available_section .available_section_slider {
+    display: none;
+  }
+}
+@media (max-width: 719px) {
+  .available_section .available_section {
+    width: 100%;
+    grid-auto-flow: row;
+  }
+  .available_section_title {
+    font-size: 34px;
+  }
+  .available_section_accent {
+    top: 35px;
+    left: 0;
+    width: 320px;
+    height: 26px;
+  }
+  .available_section_desc {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+  .available_section_text {
+    font-size: 12px;
+  }
+  .available_section_btn {
+    padding: 10px 15px;
+    font-size: 10px;
+    margin-top: 15px;
+  }
+  .available_section .available_section_card_box {
+    display: none;
+  }
+  .available_section .as_slider_container {
+    width: 80%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    margin: 0 auto;
+    margin-top: 20px;
+  }
+  .available_section .as_slider_navigation {
+    position: absolute;
+    bottom: 16px;
+    top: 60%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    z-index: 4;
+  }
+  .available_section .as_bar {
+    width: 20px;
+    height: 20px;
+    margin: 6px;
+    cursor: pointer;
+    background-color: #EE1C47;
+    opacity: 0.5;
+    border-radius: 50%;
+    transition: all 0.4s ease;
+  }
+  .available_section .as_bar:hover {
+    opacity: 1;
+    transform: scale(1.1);
+  }
+  .available_section input[name=as_r] {
+    position: absolute;
+    visibility: hidden;
+  }
+  .available_section .as_slides {
+    width: 300%;
+    height: 100%;
+    display: flex;
+  }
+  .available_section .as_slide {
+    width: 100%;
+    position: relative;
+    transition: all 0.6s ease;
+  }
+  .available_section #as_r1:checked ~ .as_slide1 {
+    transform: translate(0);
+  }
+  .available_section #as_r2:checked ~ .as_slide1 {
+    transform: translate(-200%);
+  }
+  .available_section #as_r2:checked ~ .as_slide2 {
+    transform: translate(-100%);
+  }
+  .available_section #as_r3:checked ~ .as_slide1 {
+    transform: translate(-300%);
+  }
+  .available_section #as_r3:checked ~ .as_slide2 {
+    transform: translate(-200%);
+  }
+  .available_section #as_r3:checked ~ .as_slide3 {
+    transform: translate(-200%);
+  }
+  .available_section .available_card_sticker {
+    top: 75%;
+  }
+  .available_section .available_card_info {
+    flex-direction: column;
+    align-items: start;
+    justify-content: flex-start;
+    width: 95%;
+  }
+  .available_section .available_card_name {
+    font-size: 20px;
+  }
+  .available_section .available_card_price {
+    font-size: 20px;
   }
 }
 

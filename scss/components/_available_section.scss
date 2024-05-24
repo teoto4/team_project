@@ -2,7 +2,7 @@
     height: 100%;
     // max-height: 1326px;
     width: 100vw;
-    margin: 0 auto;
+    // margin: 0 auto;
     display: grid;
     grid-template-rows: 0.2fr 1.8fr;
     margin-top: 120px;
@@ -10,7 +10,7 @@
     &_info {
         width: 80%;
         position: relative;
-        margin: 0 auto;
+        justify-self: center;
     }
 
     &_title {
@@ -235,6 +235,10 @@
         fill: $red-accent-color;
     }
 
+    .available_section_slider {
+        display: none;
+    }
+
     @media (min-width: 720px) and (max-width: 1000px) {
         .available_section {
             width: 80%;
@@ -323,6 +327,147 @@
             height: 40px;
         }
 
+        .available_section_slider {
+            display: none;
+        }
+
     }
 
+    @media (max-width: 719px) {
+        .available_section {
+            width: 100%;
+            grid-auto-flow: row;
+        }
+
+
+        &_title {
+            font-size: 34px;
+        }
+
+        &_accent {
+            top: 35px;
+            left: 0;
+            width: 320px;
+            height: 26px;
+        }
+
+        &_desc {
+            display: flex;
+            flex-direction: column;
+            gap: 0;
+        }
+
+        &_text {
+            font-size: 12px;
+        }
+
+        &_btn {
+            padding: 10px 15px;
+            font-size: 10px;
+            margin-top: 15px;
+        }
+
+        .available_section_card_box {
+            display: none;
+        }
+
+        .as_slider_container {
+            width: 80%;
+            height: 100%;
+            overflow: hidden;
+            position: relative;
+            margin: 0 auto;
+            margin-top: 20px;
+        }
+
+        .as_slider_navigation {
+            position: absolute;
+            bottom: 16px;
+            top: 60%;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            z-index: 4;
+        }
+
+        .as_bar {
+            width: 20px;
+            height: 20px;
+            margin: 6px;
+            cursor: pointer;
+            background-color: $red-accent-color;
+            opacity: 0.5;
+            border-radius: 50%;
+            transition: all 0.4s ease;
+        }
+
+        .as_bar:hover {
+            opacity: 1;
+            transform: scale(1.1);
+        }
+
+        input[name="as_r"] {
+            position: absolute;
+            visibility: hidden;
+        }
+
+        .as_slides {
+            width: 300%;
+            height: 100%;
+            display: flex;
+        }
+
+        .as_slide {
+            width: 100%;
+            position: relative;
+            transition: all 0.6s ease;
+        }
+
+        #as_r1:checked~.as_slide1 {
+            transform: translate(0)
+        }
+
+        #as_r2:checked~.as_slide1 {
+            transform: translate(-200%);
+        }
+
+        #as_r2:checked~.as_slide2 {
+            transform: translate(-100%);
+        }
+
+        #as_r3:checked~.as_slide1 {
+            transform: translate(-300%);
+        }
+
+        #as_r3:checked~.as_slide2 {
+            transform: translate(-200%);
+        }
+
+        #as_r3:checked~.as_slide3 {
+            transform: translate(-200%);
+        }
+
+        .available_card_sticker {
+            top: 75%;
+        }
+
+        .available_card_info {
+            flex-direction: column;
+            align-items: start;
+            justify-content: flex-start;
+            width: 95%;
+
+        }
+
+
+        .available_card_name {
+            font-size: 20px;
+        }
+
+        .available_card_price {
+            font-size: 20px;
+        }
+
+
+    }
 }
