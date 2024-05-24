@@ -2,6 +2,7 @@
     background-color: white;
     height: 100%;
     width: 100vw;
+    cursor: default;
 }
 
 .category_text {
@@ -38,6 +39,8 @@
     text-align: center;
     padding-top: 30px;
 }
+
+
 
 .category_card {
     display: flex;
@@ -91,6 +94,7 @@
 .card1 .card2 .card3 .card4 a:hover {
     color: $main-font-color;
     background-color: rgba(255, 255, 255, 0.59);
+    cursor: pointer;
 }
 
 .card2 {
@@ -313,6 +317,78 @@ a:hover {
         height: 25px;
         font-size: 14px;
         padding: 3px 22px;
+    }
+
+    .nav_bar {
+        padding-bottom: 60px;
+    }
+
+    .nav_bar a {
+        padding: 6px 6px;
+    }
+
+    .nav_bar a:hover {
+        padding: 6px 10px;
+    }
+}
+
+@media (max-width: 719px) {
+    .category_text {
+        padding-top: 25px;
+    }
+
+    .category_text_main p {
+        font-size: 35px;
+    }
+
+    .category_text_main img {
+        left: 17%;
+        width: 295px;
+    }
+
+    .category_text_second {
+        font-size: 9px;
+    }
+
+    .category_card {
+        padding-bottom: 20px;
+    }
+
+    .category_card :first-child {
+        padding-left: 5px;
+    }
+
+    .card {
+        width: 206px;
+        height: 220px;
+    }
+
+    .card1 {
+        padding-bottom: 10px;
+    }
+
+    .card1 p {
+        font-size: 15px;
+    }
+
+    .card1 a {
+        width: 130px;
+        height: 25px;
+        font-size: 14px;
+        padding: 3px 22px;
+    }
+
+
+    .card2 {
+        display: none;
+    }
+
+    .card3 {
+        display: none;
+    }
+
+    .card4 {
+        display: none;
     }
 
     .nav_bar {

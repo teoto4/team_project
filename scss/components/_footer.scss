@@ -2,6 +2,7 @@
     background-color: #000924;
     color: white;
     width: 100vw;
+    cursor: default;
 }
 
 .footer_main_text {
@@ -40,6 +41,10 @@
     line-height: 30px;
 }
 
+.footer_second_list li:not(:first-child:hover) {
+    cursor: pointer;
+}
+
 .footer_last_text {
     width: 63%;
     display: flex;
@@ -51,6 +56,10 @@
     font-size: 16px;
     color: rgba(255, 255, 255, 0.7);
     line-height: 30px;
+}
+
+.footer_logo_icon :hover {
+    cursor: pointer;
 }
 
 .footer_logo_icon :not(:last-child) {
@@ -86,5 +95,70 @@
         margin-left: 50px;
         width: 90%;
         font-size: 14px;
+    }
+}
+
+@media (max-width: 719px) {
+    .footer_main_text {
+        padding: 0 50px;
+        padding-top: 60px;
+        padding-bottom: 25px;
+        gap: 5px;
+        display: grid;
+        grid-template-areas: "l1 l2"
+            "l3 l4";
+    }
+
+    .footer_main_list :first-child {
+        padding-bottom: 5px;
+        width: 140px;
+    }
+
+    .l1 {
+        grid-area: l1;
+    }
+
+    .l2 {
+        grid-area: l2;
+    }
+
+    .l3 {
+        grid-area: l3;
+    }
+
+    .l4 {
+        grid-area: l4;
+    }
+
+    .footer_main_list li {
+        font-size: 11px;
+        line-height: 20px;
+    }
+
+    .footer_second_list :first-child {
+        font-size: 12px;
+        padding-bottom: 5px;
+    }
+
+    .footer_second_list li {
+        font-size: 10px;
+        line-height: 20px;
+    }
+
+    .footer_last_text {
+        margin-left: 50px;
+        width: 80%;
+        font-size: 12px;
+        padding-top: 30px;
+        padding-bottom: 20px;
+    }
+
+    .footer_logo_icon :not(:last-child) {
+        padding-right: 0px;
+    }
+
+    .footer_logo_icon img {
+        width: 22px;
+        height: 22px;
     }
 }
