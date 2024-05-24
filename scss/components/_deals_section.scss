@@ -131,4 +131,103 @@
 
 
     }
+
+}
+
+@media (max-width:1200px) {
+    .deals_section {
+
+        .box_shadow {
+
+            .first_deal_sec_card {
+
+
+                position: absolute;
+                top: 91px;
+                right: 159px;
+                z-index: 2;
+            }
+
+            .second_deal_sec_card {
+                position: absolute;
+
+                top: 100px;
+                right: 100px;
+                z-index: 1;
+            }
+
+            .orange_line {
+                position: absolute;
+                top: 502px;
+                right: 537px;
+                z-index: 2;
+            }
+
+
+            .white_line {
+
+                position: absolute;
+                top: 112px;
+                right: 25px;
+            }
+
+            .deals_section_desc {
+                padding: 50px 20px;
+
+                .deals_section_text {
+                    font-size: 40px;
+                    color: $orange-accent-color;
+                }
+            }
+
+
+        }
+    }
+}
+
+
+@media (max-width:600px) {
+    .deals_section {
+
+
+        .box_shadow {
+
+            .first_deal_sec_card {
+                position: absolute;
+                width: 60%;
+                opacity: 0.5;
+
+            }
+
+            .second_deal_sec_card {
+
+                width: 50%;
+                opacity: 0.5;
+            }
+
+            .orange_line {
+                display: none;
+            }
+
+
+            .white_line {
+                display: none;
+            }
+
+            .deals_section_desc {
+                height: 100%;
+
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                align-items: center;
+
+                .deals_section_text {
+                    font-size: 40px;
+                    color: $orange-accent-color;
+                    text-align: center;
+                }
+            }
+        }
+    }
 }
