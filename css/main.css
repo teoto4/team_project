@@ -1482,7 +1482,7 @@ a:hover {
 }
 @media (max-width: 930px) {
   .our_monthly_player {
-    background-size: cover;
+    background-size: 10%;
   }
 }
 .how_it_works_section {
