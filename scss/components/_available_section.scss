@@ -1,14 +1,16 @@
 .available_section {
     height: 100%;
     // max-height: 1326px;
-    width: 80%;
+    width: 100vw;
     margin: 0 auto;
     display: grid;
     grid-template-rows: 0.2fr 1.8fr;
     margin-top: 120px;
 
     &_info {
+        width: 80%;
         position: relative;
+        margin: 0 auto;
     }
 
     &_title {
@@ -55,13 +57,14 @@
 
     //card style start//
     .available_section_card_box {
-        width: 100%;
+        width: 80%;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr;
         gap: 25px 20px;
         margin-bottom: 120px;
         margin-top: 50px;
+        justify-self: center;
     }
 
     // @media (min-width: 720px) and (max-width: 1000px) {
@@ -241,16 +244,20 @@
             }
 
             &_accent {
-                top: 19%;
+                top: 21%;
+            }
+
+            &_desc {
+                gap: 30px;
             }
 
             &_text {
-                font-size: 22px;
+                font-size: 15px;
             }
 
             &_btn {
-                padding: 30px 35px;
-                font-size: 20px;
+                padding: 20px 25px;
+                font-size: 15px;
             }
         }
 
@@ -258,6 +265,7 @@
             grid-template-columns: 1fr 1fr;
             grid-template-rows: 1fr 1fr 1fr;
             margin-bottom: 150px;
+            margin-top: 20px;
         }
 
         .available_category_name {
@@ -268,9 +276,24 @@
             font-size: 20px;
         }
 
-        .available_card_name,
+        .available_card_sticker {
+            top: 75%;
+        }
+
+        .available_card_info {
+            flex-direction: column;
+            align-items: start;
+            justify-content: flex-start;
+            width: 95%;
+
+        }
+
+        .available_card_name {
+            font-size: 20px;
+        }
+
         .available_card_price {
-            font-size: 25px;
+            font-size: 20px;
         }
 
         .available_card_contact p {

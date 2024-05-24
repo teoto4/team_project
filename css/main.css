@@ -871,14 +871,16 @@ a:hover {
 
 .available_section {
   height: 100%;
-  width: 80%;
+  width: 100vw;
   margin: 0 auto;
   display: grid;
   grid-template-rows: 0.2fr 1.8fr;
   margin-top: 120px;
 }
 .available_section_info {
+  width: 80%;
   position: relative;
+  margin: 0 auto;
 }
 .available_section_title {
   font-family: "Inter", sans-serif;
@@ -918,13 +920,14 @@ a:hover {
   font-size: 16px;
 }
 .available_section .available_section_card_box {
-  width: 100%;
+  width: 80%;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   gap: 25px 20px;
   margin-bottom: 120px;
   margin-top: 50px;
+  justify-self: center;
 }
 .available_section .available_section_card {
   width: 100%;
@@ -1071,19 +1074,23 @@ a:hover {
     font-size: 50px;
   }
   .available_section .available_section_accent {
-    top: 19%;
+    top: 21%;
+  }
+  .available_section .available_section_desc {
+    gap: 30px;
   }
   .available_section .available_section_text {
-    font-size: 22px;
+    font-size: 15px;
   }
   .available_section .available_section_btn {
-    padding: 30px 35px;
-    font-size: 20px;
+    padding: 20px 25px;
+    font-size: 15px;
   }
   .available_section .available_section_card_box {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     margin-bottom: 150px;
+    margin-top: 20px;
   }
   .available_section .available_category_name {
     font-size: 20px;
@@ -1091,9 +1098,20 @@ a:hover {
   .available_section .available_category_rate p {
     font-size: 20px;
   }
-  .available_section .available_card_name,
+  .available_section .available_card_sticker {
+    top: 75%;
+  }
+  .available_section .available_card_info {
+    flex-direction: column;
+    align-items: start;
+    justify-content: flex-start;
+    width: 95%;
+  }
+  .available_section .available_card_name {
+    font-size: 20px;
+  }
   .available_section .available_card_price {
-    font-size: 25px;
+    font-size: 20px;
   }
   .available_section .available_card_contact p {
     font-size: 20px;
