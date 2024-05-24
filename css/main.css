@@ -27,7 +27,7 @@ main {
   grid-template-rows: minmax(971px, auto) minmax(578px, auto) minmax(570px, auto) minmax(1326px, auto) minmax(570px, auto) minmax(514px, auto) minmax(570px, auto) minmax(804px, auto);
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1300px) {
   main {
     display: grid;
     grid-template-rows: minmax(971px, auto) minmax(578px, auto) minmax(570px, auto) minmax(1326px, auto) minmax(1140px, auto) minmax(514px, auto) minmax(570px, auto) minmax(804px, auto);
@@ -1436,15 +1436,25 @@ a:hover {
 .get_our_monthly_section .get_our_monthly_conteiner .our_monthly_text .our_monthly_center form input {
   outline: none;
   margin-top: 30px;
-  border: 1px solid #FFFFFF;
+  border: 1px solid white;
   border-radius: 16px;
   padding: 20px 195px 20px 25px;
+}
+.get_our_monthly_section .get_our_monthly_conteiner .our_monthly_text .our_monthly_center form input:focus {
+  box-shadow: 0 10px 10px -10px, 0 10px 10px -10px black;
+}
+.get_our_monthly_section .get_our_monthly_conteiner .our_monthly_text .our_monthly_center form input:focus:valid {
+  border: 1.5px solid green;
+}
+.get_our_monthly_section .get_our_monthly_conteiner .our_monthly_text .our_monthly_center form input:focus:invalid {
+  border: 1.5px solid #E30A17;
 }
 .get_our_monthly_section .get_our_monthly_conteiner .our_monthly_player {
   display: flex;
   justify-content: center;
   align-items: center;
   background-image: url("../image/main_img/5_get_our_monthly_section/background_player.png");
+  background-size: cover;
 }
 .get_our_monthly_section .get_our_monthly_conteiner .our_monthly_player .scale-up-center {
   cursor: pointer;
@@ -1459,7 +1469,7 @@ a:hover {
   }
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1300px) {
   .get_our_monthly_section {
     margin-top: 0px;
   }
@@ -1467,6 +1477,14 @@ a:hover {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
+  }
+  .get_our_monthly_section .get_our_monthly_conteiner .our_monthly_player {
+    background-size: 100% 100%;
+  }
+}
+@media (max-width: 930px) {
+  .our_monthly_player {
+    background-size: cover;
   }
 }
 .how_it_works_section {
