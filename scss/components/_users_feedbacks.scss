@@ -123,6 +123,30 @@
 }
 
 
+@media (max-width: 1300px) {
+    .decoration_text_user {
+
+        position: relative;
+
+        & h3 {
+            color: $main-font-color;
+            font-size: 40px;
+            line-height: 60px;
+            font-family: $font-family;
+            z-index: 2;
+            font-weight: 800;
+        }
+
+        & img {
+            position: absolute;
+            margin-top: 65px;
+            z-index: 1;
+            max-width: 250px;
+        }
+
+    }
+}
+
 
 @media (max-width: 930px) {
     .users_feedbacks_section {

@@ -2247,6 +2247,25 @@ a:hover {
   margin-left: 58px;
 }
 
+@media (max-width: 1300px) {
+  .decoration_text_user {
+    position: relative;
+  }
+  .decoration_text_user h3 {
+    color: #09153D;
+    font-size: 40px;
+    line-height: 60px;
+    font-family: "Inter", sans-serif;
+    z-index: 2;
+    font-weight: 800;
+  }
+  .decoration_text_user img {
+    position: absolute;
+    margin-top: 65px;
+    z-index: 1;
+    max-width: 250px;
+  }
+}
 @media (max-width: 930px) {
   .users_feedbacks_section {
     display: flex;
