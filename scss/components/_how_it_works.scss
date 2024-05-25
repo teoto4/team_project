@@ -223,6 +223,10 @@
         margin-top: 120px;
         padding-bottom: 300px;
 
+        &_title {
+            font-size: 44px;
+        }
+
         &_card {
             width: 287px;
             height: 280px;
@@ -260,7 +264,13 @@
     .hiw_desc_box {
         padding: 0 100px;
         margin: 0 auto;
+        margin-bottom: 30px;
+        width: 100%;
 
+        .how_it_works_section_desc {
+            font-size: 12px;
+            text-align: start;
+        }
 
 
     }

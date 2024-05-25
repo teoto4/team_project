@@ -2043,6 +2043,9 @@ a:hover {
     margin-top: 120px;
     padding-bottom: 300px;
   }
+  .how_it_works_section_title {
+    font-size: 44px;
+  }
   .how_it_works_section_card {
     width: 287px;
     height: 280px;
@@ -2069,6 +2072,12 @@ a:hover {
   .hiw_desc_box {
     padding: 0 100px;
     margin: 0 auto;
+    margin-bottom: 30px;
+    width: 100%;
+  }
+  .hiw_desc_box .how_it_works_section_desc {
+    font-size: 12px;
+    text-align: start;
   }
 }
 .users_feedbacks_section {
