@@ -2155,6 +2155,9 @@ a:hover {
   .how_it_works_section_box {
     display: none;
   }
+  .how_it_works_section_line {
+    max-width: 300px;
+  }
   .hiw_desc_box {
     padding: 0 100px;
     margin: 0 auto;
